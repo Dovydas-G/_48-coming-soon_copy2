@@ -210,7 +210,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .column-title,
@@ -287,6 +287,9 @@ ul {
 @keyframes progress {
     0%{
         width: 0;
+        opacity: 0;
+    }
+    20%{
         opacity: 0;
     }
     100%{
@@ -369,8 +372,34 @@ ul {
     margin: 0;
     background-color: #03a9f4;
     padding: 50px 0;
+    
 }
 
+.column.short {
+    position: relative;
+}
+
+.btn-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    bottom: -25px;
+    right: -20px;
+    text-decoration: none;
+    background-color: rgb(233, 30, 99);
+    border-radius: 25px;
+    color: #fff;
+    position: absolute;
+    font-weight: 900;
+    font-size: 30px; 
+    transition: transform 0.2s;
+}
+
+.btn-to-top:hover {
+    transform: scale(1.05);
+}
 
 .social {
     display: flex;
@@ -456,6 +485,11 @@ ul {
         border: transparent;
         background-color: transparent;
     }
+
+    .btn-box {
+        display: flex;
+        justify-content: left;
+    }
 }
 
 @media (max-width: 700px) {
@@ -475,10 +509,7 @@ ul {
         margin-top: 50px;
     }
 
-    .btn-box {
-        display: flex;
-        justify-content: center;
-    }
+    
 
     .top-section {
         flex-direction: column;
