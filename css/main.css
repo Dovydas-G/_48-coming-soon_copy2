@@ -214,7 +214,7 @@ ul {
 .container .column.short {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
     padding: 100px 0;
 }
 
@@ -255,8 +255,8 @@ ul {
 .web-design-content .web-title,
 .ux-design-content .ux-title {
     display: block;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .development-design-content .development-line,
@@ -309,7 +309,6 @@ ul {
     top: -30px;
     font-size: 17px;
     font-weight: 500;
-    color: #333;
     padding: 2px 6px;
     border-radius: 3px;
 }
@@ -318,6 +317,11 @@ ul {
 .name {
     margin-right: 20px;
 
+}
+
+
+.column-text {
+    font-size: 18px;
 }
 
 .main-section-form .name,
@@ -333,7 +337,8 @@ ul {
 .main-section-form .name,
 .main-section-form .email,
 .text-field {
-    margin-bottom: 45px;
+    margin-top: 5px;
+    margin-bottom: 50px;
 }
 
 
