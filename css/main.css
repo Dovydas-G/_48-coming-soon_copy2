@@ -28,6 +28,11 @@ body {
 }
 
 
+.text-color {
+    color: #5f5a5a;
+}
+
+
 .bg-img {
     display: flex;
     align-content: center;
@@ -63,7 +68,6 @@ body {
     font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color: #5f5a5a;
 }
 
 
@@ -253,7 +257,6 @@ ul {
     display: block;
     font-size: 14px;
     font-weight: 600;
-    color: #333;
 }
 
 .development-design-content .development-line,
