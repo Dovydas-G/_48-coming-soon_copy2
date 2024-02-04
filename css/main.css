@@ -215,7 +215,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    padding: 100px 0;
+    padding: 90px 0;
 }
 
 .column-title,
@@ -379,7 +379,7 @@ ul {
     gap: 50px;
     margin: 0;
     background-color: #03a9f4;
-    padding: 50px 0;
+    padding: 35px 0;
     
 }
 
