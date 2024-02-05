@@ -126,12 +126,13 @@ ul {
 
 .top-section-btn,
 .main-section-btn{
-    width: 150px;
-    height: 40px;
+    width: 145px;
+    height: 50px;
     background-color: rgb(233, 30, 99);
     cursor: pointer;
     border: 0;
     outline: 0;
+    font-size: 16px;
     transition: transform 0.2s;
 }
 
@@ -215,7 +216,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    padding: 90px 0;
+    padding: 100px 0;
 }
 
 .column-title,
@@ -391,19 +392,22 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    bottom: -25px;
+    padding-bottom: 7px;
+    width: 55px;
+    height: 55px;
+    bottom: -20px;
     right: -16px;
     text-decoration: none;
-    background-color: rgb(233, 30, 99);
-    border-radius: 25px;
-    color: #fff;
+    background-color: rgb(233, 30, 99);;
+    color: white;
     position: absolute;
-    font-weight: 900;
-    font-size: 30px; 
+    font-size: 35px; 
     transition: transform 0.2s;
+    border-radius: 28px;
 }
+
+
+
 
 .btn-to-top:hover {
     transform: scale(1.05);
