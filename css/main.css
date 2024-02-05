@@ -133,6 +133,7 @@ ul {
     border: 0;
     outline: 0;
     font-size: 16px;
+    text-rendering: auto;
     transition: transform 0.2s;
 }
 
@@ -416,22 +417,37 @@ ul {
 .social {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 60px;
     width: 1000px;
     margin: 0 calc(50% - 500px); 
     padding: 0;
-    gap: 45px;
+    gap:0 20px;
     border-bottom: 1px solid #81ddff;
 }
 
-.social .social-link {
+.social .link-background .social-link {
+    padding-top: 6px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
     text-decoration: none;
     font-size: 20px;
-    transition: transform 0.4s;
+    border: 3px solid transparent;
+    transition: transform 0.7s;
 }
 
-.social .social-link:hover {
-    transform: scale(1.3);
+.social .link-background:hover .social-link{
+    transform: scale(1.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: white;
+    color: #81ddff;
+}
+
+.fa {
+    text-rendering: auto;
 }
 
 .row-short {
