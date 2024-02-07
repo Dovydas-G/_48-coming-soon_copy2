@@ -32,16 +32,23 @@ body {
     color: #5f5a5a;
 }
 
-
 .bg-img {
+    min-height: 100vh;
+    background-image: url(../img/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-img > div {
     display: flex;
     align-content: center;
     justify-content: center;
     height: 100vh;
-    background: url(../img/banner-1.jpg);
+   
 
 }
-
 
 .top-section {
     display: flex;
@@ -71,25 +78,27 @@ body {
 }
 
 
-.time-counter > ul {
+.clock {
     display: flex;
-    justify-content: center;
-    gap: 45px;
-    margin-bottom: 50px;
-}
-
-
-
-ul {
-    list-style-type: none;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 2rem 0;
+    color: white;
     text-align: center;
+    font-weight: bold;
+
 }
-
-
-.time-digits {
-    font-weight: 900;
-    font-size: 60px;
-    
+.clock > .time {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+.clock > .time > .value {
+    font-size: 5rem;
+}
+.clock > .time > .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
 }
 
 
@@ -139,7 +148,7 @@ ul {
 
 .main-section-btn:hover,
 .top-section-btn:hover {
-    transform: scale(1.05);
+    background-color: rgb(196, 16, 76);
 }
 
 
@@ -159,7 +168,6 @@ ul {
     width: 4px;
     height: 30px;
 }
-
 
 .mouse-wheel::before {
     content: '';
@@ -411,7 +419,7 @@ ul {
 
 
 .btn-to-top:hover {
-    transform: scale(1.05);
+    background-color: rgb(196, 16, 76);
 }
 
 .social {
@@ -553,15 +561,14 @@ ul {
         
     }
 
-    .time-counter > ul {
-        flex-direction: column;
-        gap: 10px;
-        margin: 0;
-    }
 
     .social {
         width: 400px;
         margin: 0 calc(50% - 200px); 
+    }
+
+    .clock > .time {
+        width: 50%;
     }
 }
 
@@ -581,4 +588,11 @@ ul {
         margin: 0; 
     }
 
+}
+
+
+@media (max-width: 360px) {
+    .clock > .time {
+        width: 100%;
+    }
 }
